@@ -1,1 +1,70 @@
-Java Script Dokmen Object Model
+JavaScript Dokmen Object Model
+    - Ketika sebuah website di load oleh browser, maka browser akan membuat document object model untuk halaman website tsb.
+    - DOM dibut dalalm bentuk tree/pohon yang tiap cabangnya berisikan object dari jenis element HTML
+    - JS memiliki kemampan untuk memanipulasi DOM, artinya dengan JS, kita bisa mengakses tipe object di DOM bahkan memanipulasi object nya.
+
+DOM dan JavaScript
+    - DOM bukanlah fitur atau bahasa pemrograman, DOM sebenarnya hanyalah reperensi obbject dari structur halaman web.
+    - DOM sendiri sebenarnya bukanlah bagian dari bahasas pemrograman JS, melainkan bagian dari Web API.
+    - DOM sendiri di desain secara agnostik, artinya sebenarnya bisa digunakann menggunakan bahasa pemrograman apapun, karna memang untuk membuat web, kitatidak hanya bisa menggunakan bahasa pemrograman JS.
+
+Tipe Data
+    - DOM memiliki representasi data.
+    Tidak terlalu banyak tipe data yang terdapat di DOM.
+    Oleh karna itu, sebenarnya DOM sanat sederhana, namun penggunaannya sangat bermanfaat.
+    macam tipe data :
+        Document ---> Merupakan representasi dari halaman web.
+        Node ---> Merupakan base class untuk semua tipe data di DOM, seperti Document, Element dan Attribut.
+        Element ---> Merupakan representasi object element di halaman web, misal head, body, form, input dan lain-lain.
+        NodeList ---> Merupakan array/collection yang berisikan Node.
+        Attribut ---> Atau attribute, merupakan representasi object attribute dalam element.
+        namedNodeMap ---> merupakan collection yang berisikan Attribut dalam bentuk map.
+
+
+DOCUMENT 
+    - Merupakan representasi object dari halaman web
+    - Dalam satu halaman web, terdapat satu document, dan kita tidak perlu membuatnya secara manual, karna otomatis akan ada di browser.
+    - Untuk mengakses Document, kita bisa gunakan object document. jadi secara otomatis ada variable document.
+
+    Document object
+        - Document secara otomatis dibuat dalam browser ketika membuka halaman web, sehingga kita tidak perlu membuat object document secara manual.
+        - Kita bisa langsung menggunakan kata kunci document.
+
+    Document property
+        - Document memiliki banyak sekali property.
+        - property dalam document bisa kita gunakan untuk melihat semua data yang terdapat dalam document halaman web.
+
+    Document method
+        - Document memiliki banyak sekali method.
+        - Banyak method yang terdapat di document digunakan untuk memanipulasi data DOM, misal membuat Node, Element, Attribute atau mengambil dan menyeleksi Node di dalam document.
+
+
+NODE 
+    - Node adalah base class dari Document Element dan Attribut.
+    - Artinya semua fitur yang dimiliki di Node dimiliki diturunannya.
+    - Node dalam DOM itu bentuknya adalah tree(pohon), artinya dengan Node, kita bisa melihat parent (node diatasnya), Childern (node dibawahnya), Sibling (node disebelahnya).
+
+    Node Property
+        - Node memiliki banyak sekali property.
+        - Property di node banyak berisi informasi reference ke node lainnya, seperti ke node parent nya, node  childern nya atau node sebelahnya.  
+
+    Node Method
+    - Node memiliki banyak sekali method.
+    - Method di Node bisa digunakan untuk memanipulasi data node di dalam node tersebut, misal menambah/menghapus Node childern.
+
+
+ELEMENT 
+    - Element merupakan Node yang berbentuk element, biasanya adalah element HTML, misal <html>, <head>, <div>, <table>, dan lain-lain.
+
+    Element Property
+        - Element memiliki banyak sekali property.
+        - Dan karna element adalah turunan dari Node, semua property Node pun bisa digunakan di Element.
+
+    Element Method 
+        - Element memiliki banyak sekali method
+        - Dan karna Element adalah turunan dari Node, semua method Node pun bisa digunakan di Element.
+
+    Membuat Element 
+    - Sebelumnya kita hanya mengambil element menggunakan id, artinya kita perlu buat dulu element nya di HTML.
+    - Kita juga bisa membuat object element baru, dan menambahkannya ke halaman web.
+    - Kita bisa menggunakan method createElement(tag) pada Document.

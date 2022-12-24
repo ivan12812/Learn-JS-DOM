@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document-nede</title>
+  </head>
+  <body>
+    <ul id="menu">
+      <li id="first">First</li>
+      <li id="second">Second</li>
+      <li id="thrid">Thrid</li>
+    </ul>
+    <script>
+      const menu = document.getElementById("menu");
+      console.log(menu);
+      //property node
+      console.log(menu.children);
+      //Node Method
+      menu.removeChild(document.getElementById("first"));
+      menu.removeChild(document.getElementById("second"));
+      menu.removeChild(document.getElementById("thrid"));
+
+      const second = document.getElementById("second");
+      console.log(second);
+      //property node
+      //   console.log(second.textContent);
+      //   console.log(second.previousSibling);
+      //console.log(second.nextSibling);
+
+      const thrid = document.getElementById("thrid");
+      console.log(thrid);
+    </script>
+  </body>
+</html>
